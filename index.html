@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pincode Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="checkout">
+        <form id="checkout-form">
+            <h1>Checkout</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Quam duis vitae curabitur amet, fermentum lorem. </p>
+            
+            <div class="form-group">
+                <div id="name">
+                <fieldset>
+                        <legend>
+                            <label for="fname">First Name</label>
+                        </legend>
+                        <input type="text" id="fname" name="fname" placeholder="Your name" required/>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        <label for="lname">
+                        Last Name
+                        </label>
+                    </legend>
+                    <input type="text" id="lname" name="lname" placeholder="Your last name" required/>
+                </fieldset>
+            </div>
+            
+                <fieldset>
+                    <legend>
+                        <label for="email">
+                        Email
+                        </label>
+                    </legend>
+                    <div class="email-input">
+                    <input type="email" id="email" name="email" placeholder="yourmail@gmail.com" required/>
+                    <img src="./assets/Envelope.png" alt="Email icon" class="email-icon">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        <label for="pcode">
+                        Pincode
+                    </label>
+                    </legend>
+                    <input type="number" id="pcode" name="pcode" placeholder="123456" required/>
+                </fieldset>
+        
+                <fieldset class="checkbox">
+                    <input type="checkbox" name="check" id="check" />
+                    <label for="check">Stay updated with our latest products, exclusive offers, and special promotions by opting in to receive marketing emails from us. You can unsubscribe at any time.</label>
+                </fieldset>
+
+            <button id="btn" type="submit">Enter</button>
+            
+            <div id="delivery-status"></div>
+        </div>
+        </form>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
